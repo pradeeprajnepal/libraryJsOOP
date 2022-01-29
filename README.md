@@ -1,4 +1,4 @@
-    Live Demo: https://zwonx.github.io/libraryJsOOP/
+   Live Demo: https://zwonx.github.io/libraryJsOOP/
 
 1. "Add Book" and "Cross" Button toggles the form.
 2. Submit button adds the form content to book-list table along with cross "X" button at end and clears out the form fields.
