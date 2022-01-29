@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/lux/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/book-open-line.png" type="image/x-icon">
+    <title>BookListApp</title>
+</head>
+<body>
+    <div class="container">
+        <!--========= NAVBAR ===============-->
+        <nav class="navbar navbar-light bg-light mt-4">
+            <div class="container-fluid">
+                
+                    
+                    <h1 class="">
+                    <a class="navbar-brand" href="#"><i class="ri-book-fill align-middle" ></i>
+                        <span class="align-middle">BookList</span></a>
+                    </h1>
+                
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-primary p-1" id="add-book"><span class="p-2">Add Book</span></button>
+                </div>
+            </div>
+        </nav>
+
+        <!--=============FORM==============-->
+        <div class="d-none toggle" id="book-form">
+            <form class="mt-5 bg-light p-4">
+            <fieldset>
+                <div class="d-flex">
+                    <legend>Book Info</legend>
+                    <button type="button" class="btn-close" id="btn-close"></button>
+                </div>
+                <div class="form-group">
+                    <label for="title" class="form-label mt-4 ">Title</label>
+                    <input type="text" class="form-control " id="title";>
+                </div>
+                <div class="form-group">
+                    <label for="author" class="form-label mt-4">Author</label>
+                    <input type="text" class="form-control" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="isbn" class="form-label mt-4">ISBN</label>
+                    <input type="number" class="form-control" id="isbn">
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn btn-outline-primary mt-4 p-1 " id="btn-submit"><span class="p-2">Submit</span></button>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+        
+        <!--==============TABLE=============-->
+        <div class="mt-4">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--============Script==============-->
+    <script src="script.js"></script>
+</body>
+</html>
+
